@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+.card {
+  width: 800px;
+  height: 800px;
+  background: white;
+  border-radius: 24px;
+  padding: 60px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.title {
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #111;
+  margin-bottom: 40px;
+}
+.emoji {
+  font-size: 72px;
+  margin-bottom: 20px;
+}
+.highlight {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 40px 0;
+}
+.stat {
+  background: #f7f7f7;
+  padding: 30px;
+  border-radius: 16px;
+}
+.stat-number {
+  font-size: 48px;
+  font-weight: 900;
+  color: #667eea;
+  margin-bottom: 10px;
+}
+.stat-label {
+  font-size: 20px;
+  color: #666;
+  line-height: 1.4;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  border-top: 2px solid #eee;
+}
+.tag {
+  font-size: 18px;
+  color: #999;
+}
+.source {
+  font-size: 16px;
+  color: #999;
+  font-weight: 600;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div>
+    <div class="emoji">🤖</div>
+    <div class="title">
+      AI 会抢走<br>
+      <span class="highlight">你的工作吗？</span>
+    </div>
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-number">85%</div>
+        <div class="stat-label">受影响的岗位</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">3年内</div>
+        <div class="stat-label">预计时间</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="tag">#AI #职场 #未来</div>
+    <div class="source">来源：Hard Fork</div>
+  </div>
+</div>
+</body>
+</html>
